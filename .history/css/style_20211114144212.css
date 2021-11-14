@@ -1,0 +1,506 @@
+
+
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(meanmenu.css);
+/* @import url(owl.css); */
+@import url(slick.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+     box-sizing: border-box !important;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     color: #666666;
+     font-size: 14px;
+     font-family: 'Roboto', sans-serif;
+     line-height: 1.80857;
+     font-weight: normal;
+}
+
+a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+/*---------------------------- preloader area ----------------------------*/
+.loader_bg{
+     position: fixed;
+     background: #fff;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     z-index: 9999;
+}
+.loader_bg .loader{
+     
+}
+.loader_bg .loader img{
+     width: 250px;
+     height: 250px;
+     display: block;   
+}
+/* ----------------------------------------start header----------------------------------------------- */
+.header{
+     background: url(../images/banner.png);
+     background-position: center center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 871px;
+}
+.header .logo{
+     margin: 35px 0 0 0;
+}
+.header .customer{
+     line-height: 52px;
+     text-align: right;
+     letter-spacing: 1px;
+     margin: 35px 0 0 0;
+}
+.header .customer a{
+     color: #fff;
+     display: inline-block;
+     margin: 0 0 0 10px;
+}
+.header .header-info h2{
+     font-size: 60px;
+     margin: 45px 0 30px;
+     line-height: 85px;
+     color: #000;
+}
+.header .header-info span{
+     color: #42c366;
+     font-size: 60px;
+     line-height: 77px;
+     font-weight: bold;
+     letter-spacing: 2px;
+}
+.header .header-info p{
+     font-size: 17px;
+     line-height: 1.8;
+     color: #000;
+     text-align: justify;
+}
+.header .header-info a{
+     font-size: 15px;
+     background-color: #000;
+     color: #fff;
+     width: 120px;
+     height: 40px;
+     display: block;
+     line-height: 40px;
+     text-align: center;
+     letter-spacing: 1px;
+     margin: 42px 0 0 0;
+     transition: all 0.8s;
+}
+.header .header-info a:hover{
+     background-color:#42c366;
+     color: #fff;
+}
+/* ---------------------------------------------header media query------------------------------------------------ */
+
+
+
+/* ---------------------------------------start three-boxes----------------------------------------------------- */
+.three-box{
+     position: relative;
+     padding: 30px 0;
+     text-align: center; 
+}
+.three-box .one-box{
+     padding: 5px; 
+}
+.three-box .one-box i{
+     display: inline-block;
+     width: 85px;
+     height: 85px;
+     margin: 0 0 27px;
+     border: 4px solid #42c366;
+     position: relative;
+     border-radius: 50%;
+     transition: all 0.8s;
+}
+.three-box .one-box i:hover{
+  background: #000;
+}
+.three-box .one-box i img{
+     width: 50px;
+     display: block;
+     position: absolute;
+     top: 15px;
+     left: 15px;
+}
+.three-box .one-box h3{
+     color: #000;
+     text-transform: capitalize;
+     letter-spacing: 2px;
+     margin: 0 0 20px;
+     font-size: 29px;
+}
+.three-box .one-box p{
+     font-size: 19px;
+     line-height: 30px;
+     color: #1f1716;
+     font-family: poppins;
+}
+/* -------------------------------------------start idrnt--------------------------------------------------- */
+.ident{
+     position: relative;
+     padding: 30px 0;
+     background: #d5ede0;
+     font-family: Poppins;
+}
+.ident h2{
+     margin: 0 0 29px 0;
+     font-size: 45px;
+     color: #000;
+     letter-spacing: 2px;
+     text-align: center;
+     font-weight: 600;
+}
+.ident h2>span{
+     color: #42c366;
+}
+.ident .all-why{
+     margin-bottom: 35px;
+}
+.ident .ident-img img{
+     max-width: 100%;
+     height: 413px;
+}
+
+.ident .ident-info p{
+     line-height: 1.9;
+     font-size: 18px;
+     font-family: sans-serif;
+     color: #9f9595;
+     letter-spacing: 1px;
+     text-align: justify;
+}
+.ident .ident-info a{
+     font-size: 15px;
+     background-color: transparent;
+     color: #42c366;
+     width: 160px;
+     height: 40px;
+     display: block;
+     line-height: 36px;
+     text-align: center;
+     letter-spacing: 1px;
+     margin: -4px 0 0 0;
+     transition: all 0.8s;
+     border: 2px solid #42c366;
+}
+.ident .ident-info a:hover{
+     background-color:#42c366;
+     color: #fff;
+}
+.ident .ident-info h3{
+     font-size: 28px;
+     font-family: sans-serif;
+     color: #000;
+     text-transform: capitalize;
+     letter-spacing: 2px;
+}    
+.clients{
+     padding: 49px 0;
+    text-align: center;
+    position: relative;
+}
+.clients h2{
+   font-size: 53px;
+   font-weight: 600;
+   margin: 0 0 25px;
+   letter-spacing: 2px;
+   color: #000;
+}
+.clients h2>span{
+     color: #42c366
+}
+.clients .clients-text{
+     color: #000;
+     font-size: 15px;
+     line-height: 1.8;
+     margin: 0 0 25px;
+}
+.clients .item{
+     background: #42c366;
+     padding: 21px 5px;
+     border-radius: 19px;
+     height: 293px;
+     color: #fff;
+     font-family: roboto,sans-serif;
+}
+.clients .item>span{
+     width: 50px;
+     height: 50px;
+     background: #ddd;
+     display: inline-block;
+     border-radius: 50%;
+     margin: 10px 0 10px;
+}
+.clients .item h5{
+     font-size: 40px;
+     text-transform: capitalize;
+     margin: -5px 0 12px 0;
+}
+.clients .item p{
+     font-size: 13px;
+     margin: 20px 0 0 0;
+}
+.clients .owl-carousel .owl-dots .owl-dot span{
+     width: 30px;
+     height: 30px;
+     background: #42c366;
+}
+.clients .owl-carousel .owl-dots .owl-dot.active span{
+     background: #333;
+     /* width: 30px;
+     height: 30px;
+     border-radius: 50%; */
+}
+/* -----------------------------------------start quest----------------------------------------------- */
+.quest{
+     padding: 30px 0;
+     position: relative;
+}
+.quest h2{
+     font-size: 35px;
+     font-weight: 600;
+     margin: 0 0 0px;
+     letter-spacing: 2px;
+     color: #000;
+     text-align: right;
+  }
+  .quest h2>span{
+       color: #42c366
+  }
+.quest .quest-img img{
+     max-width: 100%;
+}
+.quest .all-simple .simple{
+     border: 2px solid #42c366;
+     height: auto;
+     line-height: 40px;
+     padding: 0 10px;
+     margin: 0 0 10px;
+     position: relative;
+}
+.quest .all-simple{
+     margin: 50px 0 0 0;
+}
+
+.quest .all-simple .simple a:hover{
+    color: #000;
+}
+.quest .all-simple .simple span{
+     position: absolute;
+    left: 94%;
+    font-size: 23px;
+    color: #42c366;
+    cursor: pointer;
+}
+.quest .all-simple .simple .hidden{
+     display: none;
+}
+.quest .all-simple .simple .simple-d{
+     height: 160px;
+}
+/* -----------------------------------start contact2------------------------------------- */
+.contact2{
+     background: url(../images/contact_bg.jpg);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     position: relative;
+     padding: 50px 0;
+}
+.contact2 .contact2-txt h2{
+     color: #fff;
+     font-size: 52px;
+     font-weight: 600;
+     letter-spacing: 2px;
+     line-height: 70px;
+     text-transform: capitalize;
+}
+.contact2 .contact2-txt h2 span{
+     color: #42c366;
+}
+.contact2 .contact2-txt a{
+     font-size: 18px;
+     background-color: #fff;
+     color: #42c366;
+     width: 209px;
+     height: 51px;
+     display: block;
+     line-height: 51px;
+     text-align: center;
+     letter-spacing: 1px;
+     margin: 18px 0 0 0;
+     transition: all 0.8s;
+     border: 2px solid #42c366;
+}
+.contact2 .contact2-txt a:hover{
+     background-color:#42c366;
+     color: #fff;
+}
+.contact2 .contact2-form{
+     background: #fff;
+     padding: 10px 5px;
+     height: auto;
+}
+.contact2 .contact2-form input,
+.contact2 .contact2-form textarea{
+     width: 80%;
+     margin: 5px auto;
+     display: block;
+     outline: none;
+     border: none;
+     border-bottom: 1px solid #000;
+     text-indent: 5px;
+     height: 40px;
+     line-height: 40px;
+}
+.contact2 .contact2-form textarea{
+     height: 170px;
+     
+}
+
+.contact2 .contact2-form input[type="submit"]{
+     font-size: 15px;
+     background-color: #000;
+     color: #fff;
+     width: 120px;
+     height: 40px;
+     display: block;
+     line-height: 40px;
+     text-align: center;
+     letter-spacing: 1px;
+     margin: 42px 0 0 0;
+     transition: all 0.8s;
+     margin: 24px auto;
+     
+}
+.contact2 .contact2-form input[type="submit"]:hover{
+     background-color:#42c366;
+     color: #fff;
+}
+/* ---------------------------start footer--------------------------- */
+.footer .foot{
+     text-align: center;
+     padding: 10px 0;
+     font-size: 15px;
+ }
+ .footer .foot a:hover {
+     color: #41c365;
+ }
+
+ @media (max-width:576px){
+     .header{
+          background-color: #bccec4!important;
+          background-image: none!important;
+     }
+     .header .logo{
+          margin: -18px 0 0 0!important;
+     }
+     .header .customer{
+          margin: -3px 0 0 0!important;
+          text-align: center!important;
+     }
+     .header .header-info h2 {
+          font-size: 35px;
+          margin: 15px 0 11px;
+          line-height: 46px;
+      }
+      .header .header-info span {
+          font-size: 35px;
+          line-height: 46px;
+      }
+      .header .header-info p {
+          font-size: 15px;
+          line-height: 1.7;
+      }
+      .header .header-info a {
+          margin: 7px 0 0 0;
+      }
+      .header .header-img img {
+          max-width: 100%;
+      }
+      /* -----------------------------------start contact-2-----------------------
+       */
+      .contact2 .contact2-txt h2 {
+          font-size: 35px!important;
+          line-height: 38px!important;
+      }
+      .contact2 .contact2-txt a {
+          margin: 18px 0 30px 0px;
+      }
+}
+/* -------------------------------------smallwidth device---------------------------- */
+@media (max-width:768px){
+     .header{
+          background-color: #bccec4!important;
+          background-image: none!important;
+     }
+     .header .logo{
+          margin: 20px 0 0;
+     }
+     .header .customer{
+          margin: 20px 0 0;
+          text-align: right;
+     }
+     .header .header-info h2 {
+          font-size: 35px;
+          margin: 15px 0 11px;
+          line-height: 46px;
+      }
+      .header .header-info span {
+          font-size: 35px;
+          line-height: 46px;
+      }
+      .header .header-info p {
+          font-size: 15px;
+          line-height: 1.7;
+      }
+      .header .header-info a {
+          margin: 7px 0 0 0;
+      }
+      .header .header-img img {
+          max-width: 100%;
+      }
+      /* -----------------------------------start contact-2-----------------------*/
+      .contact2 .contact2-txt h2 {
+          font-size: 35px!important;
+          line-height: 38px!important;
+      }
+      .contact2 .contact2-txt a {
+          margin: 18px 0 30px 0px;
+      }
+}
